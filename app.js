@@ -33,7 +33,7 @@ app.post("/", function(req, res) {
   const url = "https://us19.api.mailchimp.com/3.0/lists/16b5117aea";
   const option = {
     method: "POST",
-    auth: "aman1:4f970f29c6547f84c8304638de7c7dac-us19",
+    auth: "aman1:02e6350a7d41a690933eb979ac334259-us19",//make3 sure taht api key is not posted on github as a public because it would be disabled aftera few times.
   }
 
   const request = https.request(url, option, function(response) {
@@ -61,5 +61,5 @@ app.post("/faliure",function(req,res){
 app.listen(process.env.PORT|| 3000, function() {
   console.log("Server started");
 });
-//api key:- 4f970f29c6547f84c8304638de7c7dac-us19
+//api key:- 02e6350a7d41a690933eb979ac334259-us19
 //list id: 16b5117aea
